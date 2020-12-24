@@ -1,0 +1,27 @@
+
+
+<html>
+    <head>
+        hello
+        <meta charset = "UTF-8">
+            </head>
+    <css>
+        
+    </css>
+    <body>
+        <button onclick = "getImage();" style="width:230pt;height:80pt;font-size:20pt">访问相册</button>
+        <button onclick = "titleClick();" style="width:230pt;height:80pt;font-size:20pt">标题按钮</button>
+        <script>
+            function getImage() {
+                //alert(1);
+  			   window.webkit.messageHandlers.getImage.postMessage('我是js方法传过来的数据','1324');
+            }
+        function titleClick() {
+            window.webkit.messageHandlers.getImage.postMessage('hello world');
+        }
+        </script>
+    </body>
+    
+</html>
+
+
